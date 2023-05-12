@@ -9,7 +9,7 @@ import javax.naming.StringRefAddr;
 import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
 
-public class JNDIServer {
+public class HackerRMIRefServer {
 
 
     public static void main(String[] args) throws Exception {
