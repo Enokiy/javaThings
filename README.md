@@ -9,6 +9,8 @@ record all my cve learning notes
 
 <a href="./KafkaDemo">kafka-clients连接时的属性可控时的JNDI注入漏洞</a>
 
+<a href="./JDBCRCEPOC">JDBC连接配置可控时导致反序列化/RCE/文件读写等漏洞</a>
+
 # others
 
 <a href="./JAVAHashCollision/">CTF： java 哈希碰撞&QLExpression</a>

