@@ -33,3 +33,7 @@ build/
 .vscode/
 
 javaThingsNotes/
+JAVAWeb/
+RocketMQ_RCE/
+XstreamUnmashalDemo/
+java_deserialize_vul/

@@ -11,6 +11,8 @@ record all my cve learning notes
 
 <a href="./JDBCRCEPOC">JDBC连接配置可控时导致反序列化/RCE/文件读写等漏洞</a>
 
+<a href="https://github.com/Enokiy/javaThings/blob/main/KafkaDemo/README1.md">kafka-clients连接的属性可控时的SSRF和任意文件读漏洞</a>
+
 # others
 
 <a href="./JAVAHashCollision/">CTF： java 哈希碰撞&QLExpression</a>
